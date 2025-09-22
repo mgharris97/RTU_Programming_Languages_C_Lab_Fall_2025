@@ -12,6 +12,18 @@
 */
 
 int is_prime(int n) {
+    if (n==2)
+    {
+        return 1;
+    } else if (n < 2)
+    {
+        return 0;
+    } else if (n % 2 == 0){
+        return 0;
+    } else {
+        
+    }
+
     // TODO: check if n is prime using loop up to sqrt(n)
     return 0; // placeholder
 }
