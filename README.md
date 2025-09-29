@@ -1,4 +1,7 @@
 
+
+
+test input 
 # Lab 1 — C Basics (Week 1)
 
 **Goals**
