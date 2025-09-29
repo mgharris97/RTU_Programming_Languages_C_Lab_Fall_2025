@@ -25,10 +25,10 @@
 #include <limits.h>
 
 // Function prototypes
-int array_min(int arr[], int size);
-int array_max(int arr[], int size);
-int array_sum(int arr[], int size);
-float array_avg(int arr[], int size);
+int array_min(int arr[], int size); //finding the min of arr
+int array_max(int arr[], int size); //finding the max of arr
+int array_sum(int arr[], int size); //sum of arr
+float array_avg(int arr[], int size); //mean of arr
 
 int main(void) {
     int arr[] = {10, 20, 5, 30, 15};
@@ -55,16 +55,33 @@ int array_min(int arr[], int size) {
 }
 
 int array_max(int arr[], int size) {
+    int max = INT_MIN;
+    for (int i =0;i<size;i++)
+    {
+        if (max < arr[i])
+        {
+            max = arr[i];
+        }
+    }
     // TODO: return largest element
-    return 0; // placeholder
+    return max; // placeholder
 }
 
 int array_sum(int arr[], int size) {
-    // TODO: return sum of elements
-    return 0; // placeholder
+    int sum = 0;
+    for (int i = 0; i<size; i++)
+    {
+        sum+=arr[i];
+    }
+    return sum; // placeholder
 }
 
 float array_avg(int arr[], int size) {
     // TODO: return average as float
-    return 0.0f; // placeholder
+    int sum = 0;
+    for(int i = 0; i<size; i++)
+    {
+        sum += arr[i];
+    }
+    return (float) sum / size; // placeholder
 }
