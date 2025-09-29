@@ -1,8 +1,8 @@
 /*
  * Lab 3, Task 2
- * Student Name, Student ID
+ * Matthew Harris, 241ADB166
  *
- * Practice using pointers as function parameters.
+ * Practice using pointers as functiodockn parameters.
  * Implement:
  *   - swap (exchange values of two ints)
  *   - modify_value (multiply given int by 2)
@@ -32,6 +32,7 @@ int main(void) {
 
     modify_value(&a);
     printf("After modify_value: a=%d\n", a);
+    
 
     return 0;
 }
