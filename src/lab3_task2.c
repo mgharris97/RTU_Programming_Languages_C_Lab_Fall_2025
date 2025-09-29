@@ -39,6 +39,9 @@ int main(void) {
 
 // Implement functions below
 void swap(int *x, int *y) {
+    int *temp = *x;
+    *x = *y;
+    *y = *temp;
     // TODO: swap values using a temporary variable
 }
 
