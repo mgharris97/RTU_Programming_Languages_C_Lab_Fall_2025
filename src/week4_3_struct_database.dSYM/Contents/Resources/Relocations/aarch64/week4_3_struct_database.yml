@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/Matt/Documents/GitHub/RTU_Programming_Languages_C_Lab_Fall_2025/src/week4_3_struct_database'
+relocations:     []
+...
