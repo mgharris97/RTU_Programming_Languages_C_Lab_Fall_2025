@@ -59,8 +59,15 @@ int main(void) {
 
 
     // Optional: Compute average grade or find top student
+    double total = 0.0f;
+    for(int i = 0; i<n; i++)
+    {
+        total += students[i].grade;
+    }
+    double average = total/n;
 
     // TODO: Free allocated memory
+    free(students);
 
     return 0;
 }
