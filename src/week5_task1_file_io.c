@@ -34,11 +34,23 @@ int main(void) {
 
     // TODO: 5. Open file again for reading (mode = "r")
     fp = fopen(filename, "r");
+    if (fp == NULL)
+    {
+        perror("Error opening file");
+        return 1;
+    }
     // TODO: 6. Use fgets() in a loop to read and print each line to the console
+    char buffer[256];
+    while (fgets(buffer, sizeof(buffer), fp)){
+        printf("%s", line);
+    }
+    
+    
     
     // TODO: 7. Close the file
-
+    fclose(fp);
     // BONUS: ask user for filename instead of using default "data.txt"
+    
     // BONUS: count number of lines read
 
     return 0;
