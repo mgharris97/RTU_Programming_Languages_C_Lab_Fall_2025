@@ -7,20 +7,20 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_NAME_LEN 50
+#define MAX_NAME_LEN 50 //max name length
 
 typedef struct {
     char name[MAX_NAME_LEN];
     int age;
     float gpa;
-} Student;
+} Student;  //visual difference between traditional struct Student {}. typedef struct{} allows Student to be used as a datatype without needing struct specifier 
 
 // Function prototypes
-void save_student(Student s, const char *filename);
-Student load_student(const char *filename);
+void save_student(Student s, const char *filename); //function that will return nothing
+Student load_student(const char *filename); //function that will return type Student
 
 int main(void) {
-    Student s1;
+    Student s1; //creating a new student type with variables name, age, gpa     
     strcpy(s1.name, "Alice");
     s1.age = 21;
     s1.gpa = 3.75f;
