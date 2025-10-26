@@ -65,7 +65,7 @@ int main(void) {
     //Loaded student: Alice, 21, GPA 3.75
     printf("Saving student to file...\n");
     printf("Loaded student from file...\n");
-    printf("Loaded student from file: %s, %d, %f\n", s2.name, s2.age, s2.gpa);
+    printf("Loaded student from file: %s, %d, GPA %.2f\n", s2.name, s2.age, s2.gpa);
 
     return 0;
 }
